@@ -53,7 +53,7 @@ const data = [
     coverImg: "katie-zaferes.png",
     imgAlt: "The swimmer Katie Zaferes",
     stats: {
-      rating: 5.0,
+      rating: 4.3,
       reviewCount: 6,
     },
     location: "Online",
@@ -68,7 +68,7 @@ const data = [
     coverImg: "wedding-photography.png",
     imgAlt: "Bride in white wedding dress",
     stats: {
-      rating: 5.0,
+      rating: 4.9,
       reviewCount: 30,
     },
     location: "Los Angeles",
@@ -83,7 +83,7 @@ const data = [
     coverImg: "mountain-bike.png",
     imgAlt: "Mountain bike on rugged terrain",
     stats: {
-      rating: 4.8,
+      rating: 4.7,
       reviewCount: 2,
     },
     location: "Switzerland",
