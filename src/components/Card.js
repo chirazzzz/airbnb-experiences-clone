@@ -2,15 +2,15 @@ import React from "react";
 
 function Card(props) {
   let badgeText;
-  if (props.item.openSpots > 1 && props.item.openSpots < 6) {
+  if (props.openSpots > 1 && props.openSpots < 6) {
     badgeText = "LIMITED SPACES";
-  } else if (props.item.openSpots === 0) {
+  } else if (props.openSpots === 0) {
     badgeText = "SOLD OUT";
-  } else if (props.item.location === "Online") {
+  } else if (props.location === "Online") {
     badgeText = "ONLINE"
   }
 
-  console.log(props.item)
+  console.log(props)
   // img={item.coverImg}
   // imgAlt={item.imgAlt}
   // rating={item.stats.rating}
@@ -24,8 +24,8 @@ function Card(props) {
     <div className="card">
       {badgeText && <div className="card--badge">{badgeText}</div>}
       <img
-        src={process.env.PUBLIC_URL + `images/${props.item.coverImg}`}
-        alt={props.item.imgAlt}
+        src={process.env.PUBLIC_URL + `images/${props.coverImg}`}
+        alt={props.imgAlt}
         className="card--img"
       />
       <div className="card-info">
@@ -35,15 +35,15 @@ function Card(props) {
           className="card--star"
         />
         <p>
-          {props.item.stats.rating}
+          {props.stats.rating}
           <span className="card--light">
-            ({props.item.stats.reviewCount}) • {props.item.location}
+            ({props.stats.reviewCount}) • {props.location}
           </span>
         </p>
       </div>
-      <p>{props.item.title}</p>
+      <p>{props.title}</p>
       <p>
-        <span className="card--bold">From ${props.item.price}</span> / person
+        <span className="card--bold">From ${props.price}</span> / person
       </p>
     </div>
   );
