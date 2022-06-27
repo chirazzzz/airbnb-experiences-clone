@@ -28,6 +28,7 @@ function App() {
         location={item.location}
         title={item.title}
         price={item.price}
+        openSpots={item.openSpots}
       />
     );
   })
@@ -36,7 +37,9 @@ function App() {
     // <Hero />
     <div className="container">
       <Navbar />
-      {cards}
+      <section className="cards-list">
+        {cards}
+      </section>
       {/* <Hero /> */}
     </div>
   );
