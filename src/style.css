@@ -5,12 +5,13 @@
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
+  color: #222222;
 }
 
 .navbar {
   max-height: 70px;
   padding: 18px 32px;
-  box-shadow: 0px 3px 8px 0px #0000001A;
+  box-shadow: 0px 3px 8px 0px #0000001a;
 }
 
 .nav--logo {
@@ -41,6 +42,61 @@ body {
   font-weight: 300;
   width: 300px;
   line-height: 110%;
-  color: #222222;
   padding-left: 32px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 32px;
+  font-size: 14px;
+}
+
+.card > * {
+  margin: 0;
+  margin-top: 6px;
+}
+
+.card--img {
+  height: 235px;
+  border-radius: 9px;
+  margin-top: 0.5em;
+}
+
+.card--status {
+  position: absolute;
+  background-color: #fff;
+  width: 61px;
+  left: 38px;
+  top: 66px;
+  border-radius: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 10px;
+  padding: 4px;
+}
+
+.card-info {
+  display: flex;
+  align-items: center;
+}
+
+.card-info > p {
+  margin-top: 6px;
+  margin: 0
+}
+
+.card--star {
+  height: 14px;
+  margin-right: 4px;
+}
+
+.card--light {
+  color:#918E9B;
+}
+
+.card--bold {
+  color: black;
+  font-weight: 600;
 }
